@@ -862,6 +862,7 @@ namespace Material_Editor
                 splitContainerEffect.Enabled = true;
 
                 int nameIndex = fileName.LastIndexOf('\\');
+                saveFileDialog.InitialDirectory = fileName.Substring(0, nameIndex);
                 this.Text = fileName.Substring(nameIndex + 1, fileName.Length - nameIndex - 1);
                 changed = false;
             }

@@ -525,6 +525,18 @@
             this.splitContainerGeneral.SplitterDistance = 165;
             this.splitContainerGeneral.TabIndex = 1;
             // 
+            // InfoToolTip
+            // 
+            System.Windows.Forms.ToolTip InfoToolTip = new System.Windows.Forms.ToolTip();
+            InfoToolTip.AutoPopDelay  = 5000;
+            InfoToolTip.InitialDelay = 1000;
+            InfoToolTip.ReshowDelay  = 500;
+            //InfoToolTip.IsBalloon  = true;
+            //InfoToolTip.BackColor  = new System.Drawing.Color();
+            //InfoToolTip.ForeColor  = new System.Drawing.Color();
+            InfoToolTip.ToolTipTitle = "General Info";
+            InfoToolTip.ToolTipIcon  = System.Windows.Forms.ToolTipIcon.Info;
+            // 
             // lbGrayscaleToPaletteColor
             // 
             this.lbGrayscaleToPaletteColor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -535,6 +547,7 @@
             this.lbGrayscaleToPaletteColor.Size = new System.Drawing.Size(135, 13);
             this.lbGrayscaleToPaletteColor.TabIndex = 24;
             this.lbGrayscaleToPaletteColor.Text = "Grayscale To Palette Color";
+            InfoToolTip.SetToolTip(this.lbGrayscaleToPaletteColor, "Enable/Disable Grayscale To Palette Color");
             // 
             // lbEnvironmentMaskScale
             // 
@@ -546,6 +559,7 @@
             this.lbEnvironmentMaskScale.Size = new System.Drawing.Size(135, 13);
             this.lbEnvironmentMaskScale.TabIndex = 23;
             this.lbEnvironmentMaskScale.Text = "Environment Mask Scale";
+            InfoToolTip.SetToolTip(this.lbEnvironmentMaskScale, "TODO");
             // 
             // lbEnvironmentMapping
             // 
@@ -557,6 +571,7 @@
             this.lbEnvironmentMapping.Size = new System.Drawing.Size(135, 13);
             this.lbEnvironmentMapping.TabIndex = 22;
             this.lbEnvironmentMapping.Text = "Environment Mapping";
+            InfoToolTip.SetToolTip(this.lbEnvironmentMapping, "TODO");
             // 
             // lbRefractionPower
             // 
@@ -569,6 +584,7 @@
             this.lbRefractionPower.Size = new System.Drawing.Size(135, 13);
             this.lbRefractionPower.TabIndex = 21;
             this.lbRefractionPower.Text = "Refraction Power";
+            InfoToolTip.SetToolTip(this.lbRefractionPower, "TODO");
             // 
             // lbRefractionFalloff
             // 
@@ -581,6 +597,7 @@
             this.lbRefractionFalloff.Size = new System.Drawing.Size(135, 13);
             this.lbRefractionFalloff.TabIndex = 20;
             this.lbRefractionFalloff.Text = "Refraction Falloff";
+            InfoToolTip.SetToolTip(this.lbRefractionFalloff, "TODO");
             // 
             // lbRefraction
             // 
@@ -592,6 +609,7 @@
             this.lbRefraction.Size = new System.Drawing.Size(135, 13);
             this.lbRefraction.TabIndex = 19;
             this.lbRefraction.Text = "Refraction";
+            InfoToolTip.SetToolTip(this.lbRefraction, "TODO");
             // 
             // lbNonOccluder
             // 
@@ -603,6 +621,7 @@
             this.lbNonOccluder.Size = new System.Drawing.Size(135, 13);
             this.lbNonOccluder.TabIndex = 18;
             this.lbNonOccluder.Text = "Non Occluder";
+            InfoToolTip.SetToolTip(this.lbNonOccluder, "TODO");
             // 
             // lbDecalNoFade
             // 
@@ -614,6 +633,7 @@
             this.lbDecalNoFade.Size = new System.Drawing.Size(135, 13);
             this.lbDecalNoFade.TabIndex = 17;
             this.lbDecalNoFade.Text = "Decal No Fade";
+            InfoToolTip.SetToolTip(this.lbDecalNoFade, "TODO");
             // 
             // lbTwoSided
             // 
@@ -625,6 +645,7 @@
             this.lbTwoSided.Size = new System.Drawing.Size(135, 13);
             this.lbTwoSided.TabIndex = 16;
             this.lbTwoSided.Text = "Two Sided";
+            InfoToolTip.SetToolTip(this.lbTwoSided, "TODO");
             // 
             // lbDecal
             // 
@@ -636,6 +657,7 @@
             this.lbDecal.Size = new System.Drawing.Size(135, 13);
             this.lbDecal.TabIndex = 15;
             this.lbDecal.Text = "Decal";
+            InfoToolTip.SetToolTip(this.lbDecal, "TODO");
             // 
             // lbWetnessControlSSR
             // 
@@ -647,6 +669,7 @@
             this.lbWetnessControlSSR.Size = new System.Drawing.Size(135, 13);
             this.lbWetnessControlSSR.TabIndex = 14;
             this.lbWetnessControlSSR.Text = "Wetness Control SSR";
+            InfoToolTip.SetToolTip(this.lbWetnessControlSSR, "TODO");
             // 
             // lbScreenSpaceReflections
             // 
@@ -658,6 +681,7 @@
             this.lbScreenSpaceReflections.Size = new System.Drawing.Size(135, 13);
             this.lbScreenSpaceReflections.TabIndex = 13;
             this.lbScreenSpaceReflections.Text = "Screen Space Reflections";
+            InfoToolTip.SetToolTip(this.lbScreenSpaceReflections, "Enable/Disable Reflections of surrounding objects onto this object");
             // 
             // lbZBufferTest
             // 
@@ -669,6 +693,7 @@
             this.lbZBufferTest.Size = new System.Drawing.Size(135, 13);
             this.lbZBufferTest.TabIndex = 12;
             this.lbZBufferTest.Text = "Z Buffer Test";
+            InfoToolTip.SetToolTip(this.lbZBufferTest, "TODO");
             // 
             // lbZBufferWrite
             // 
@@ -680,6 +705,7 @@
             this.lbZBufferWrite.Size = new System.Drawing.Size(135, 13);
             this.lbZBufferWrite.TabIndex = 11;
             this.lbZBufferWrite.Text = "Z Buffer Write";
+            InfoToolTip.SetToolTip(this.lbZBufferWrite, "TODO");
             // 
             // lbAlphaTest
             // 
@@ -691,6 +717,7 @@
             this.lbAlphaTest.Size = new System.Drawing.Size(135, 13);
             this.lbAlphaTest.TabIndex = 10;
             this.lbAlphaTest.Text = "Alpha Test";
+            InfoToolTip.SetToolTip(this.lbAlphaTest, "TODO");
             // 
             // lbAlphaTestReference
             // 
@@ -702,6 +729,7 @@
             this.lbAlphaTestReference.Size = new System.Drawing.Size(135, 13);
             this.lbAlphaTestReference.TabIndex = 9;
             this.lbAlphaTestReference.Text = "Alpha Test Reference";
+            InfoToolTip.SetToolTip(this.lbAlphaTestReference, "TODO");
             // 
             // lbAlphaBlendMode
             // 
@@ -713,6 +741,7 @@
             this.lbAlphaBlendMode.Size = new System.Drawing.Size(135, 13);
             this.lbAlphaBlendMode.TabIndex = 8;
             this.lbAlphaBlendMode.Text = "Alpha Blend Mode";
+            InfoToolTip.SetToolTip(this.lbAlphaBlendMode, "TODO");
             // 
             // lbAlpha
             // 
@@ -724,6 +753,7 @@
             this.lbAlpha.Size = new System.Drawing.Size(135, 13);
             this.lbAlpha.TabIndex = 7;
             this.lbAlpha.Text = "Alpha";
+            InfoToolTip.SetToolTip(this.lbAlpha, "TODO");
             // 
             // lbScaleV
             // 
@@ -735,6 +765,7 @@
             this.lbScaleV.Size = new System.Drawing.Size(135, 13);
             this.lbScaleV.TabIndex = 6;
             this.lbScaleV.Text = "Scale V";
+            InfoToolTip.SetToolTip(this.lbScaleV, "TODO");
             // 
             // lbScaleU
             // 
@@ -746,6 +777,7 @@
             this.lbScaleU.Size = new System.Drawing.Size(135, 13);
             this.lbScaleU.TabIndex = 5;
             this.lbScaleU.Text = "Scale U";
+            InfoToolTip.SetToolTip(this.lbScaleU, "TODO");
             // 
             // lbOffsetV
             // 
@@ -757,6 +789,7 @@
             this.lbOffsetV.Size = new System.Drawing.Size(135, 13);
             this.lbOffsetV.TabIndex = 4;
             this.lbOffsetV.Text = "Offset V";
+            InfoToolTip.SetToolTip(this.lbOffsetV, "TODO");
             // 
             // lbOffsetU
             // 
@@ -768,6 +801,7 @@
             this.lbOffsetU.Size = new System.Drawing.Size(135, 13);
             this.lbOffsetU.TabIndex = 3;
             this.lbOffsetU.Text = "Offset U";
+            InfoToolTip.SetToolTip(this.lbOffsetU, "TODO");
             // 
             // lbTileV
             // 
@@ -779,6 +813,7 @@
             this.lbTileV.Size = new System.Drawing.Size(135, 13);
             this.lbTileV.TabIndex = 2;
             this.lbTileV.Text = "Tile V";
+            InfoToolTip.SetToolTip(this.lbTileV, "TODO");
             // 
             // lbTileU
             // 
@@ -790,6 +825,7 @@
             this.lbTileU.Size = new System.Drawing.Size(135, 13);
             this.lbTileU.TabIndex = 1;
             this.lbTileU.Text = "Tile U";
+            InfoToolTip.SetToolTip(this.lbTileU, "TODO");
             // 
             // lbVersion
             // 
@@ -801,6 +837,7 @@
             this.lbVersion.Size = new System.Drawing.Size(135, 13);
             this.lbVersion.TabIndex = 0;
             this.lbVersion.Text = "Version";
+            InfoToolTip.SetToolTip(this.lbVersion, "TODO");
             // 
             // cbGrayscaleToPaletteColor
             // 
@@ -1336,6 +1373,7 @@
             this.lbSkewSpecularAlpha.Size = new System.Drawing.Size(135, 13);
             this.lbSkewSpecularAlpha.TabIndex = 54;
             this.lbSkewSpecularAlpha.Text = "Skew Specular Alpha";
+            InfoToolTip.SetToolTip(this.lbSkewSpecularAlpha, "TODO");
             // 
             // lbGrayscaleToPaletteScale
             // 
@@ -1347,6 +1385,7 @@
             this.lbGrayscaleToPaletteScale.Size = new System.Drawing.Size(137, 13);
             this.lbGrayscaleToPaletteScale.TabIndex = 53;
             this.lbGrayscaleToPaletteScale.Text = "Grayscale To Palette Scale";
+            InfoToolTip.SetToolTip(this.lbGrayscaleToPaletteScale, "TODO");
             // 
             // lbTessellationFadeDistance
             // 
@@ -1359,6 +1398,7 @@
             this.lbTessellationFadeDistance.Size = new System.Drawing.Size(135, 13);
             this.lbTessellationFadeDistance.TabIndex = 52;
             this.lbTessellationFadeDistance.Text = "Tessellation Fade Distance";
+            InfoToolTip.SetToolTip(this.lbTessellationFadeDistance, "TODO");
             // 
             // lbTessellationBaseFactor
             // 
@@ -1371,6 +1411,7 @@
             this.lbTessellationBaseFactor.Size = new System.Drawing.Size(135, 13);
             this.lbTessellationBaseFactor.TabIndex = 51;
             this.lbTessellationBaseFactor.Text = "Tessellation Base Factor";
+            InfoToolTip.SetToolTip(this.lbTessellationBaseFactor, "TODO");
             // 
             // lbTessellationPNScale
             // 
@@ -1383,6 +1424,7 @@
             this.lbTessellationPNScale.Size = new System.Drawing.Size(135, 13);
             this.lbTessellationPNScale.TabIndex = 50;
             this.lbTessellationPNScale.Text = "Tessellation PN Scale";
+            InfoToolTip.SetToolTip(this.lbTessellationPNScale, "TODO");
             // 
             // lbDisplacementTexScale
             // 
@@ -1394,6 +1436,7 @@
             this.lbDisplacementTexScale.Size = new System.Drawing.Size(135, 13);
             this.lbDisplacementTexScale.TabIndex = 49;
             this.lbDisplacementTexScale.Text = "Displacement Tex Scale";
+            InfoToolTip.SetToolTip(this.lbDisplacementTexScale, "TODO");
             // 
             // lbDisplacementTexBias
             // 
@@ -1405,6 +1448,7 @@
             this.lbDisplacementTexBias.Size = new System.Drawing.Size(135, 13);
             this.lbDisplacementTexBias.TabIndex = 48;
             this.lbDisplacementTexBias.Text = "Displacement Tex Bias";
+            InfoToolTip.SetToolTip(this.lbDisplacementTexBias, "TODO");
             // 
             // lbTessellate
             // 
@@ -1416,6 +1460,7 @@
             this.lbTessellate.Size = new System.Drawing.Size(135, 13);
             this.lbTessellate.TabIndex = 47;
             this.lbTessellate.Text = "Tessellate";
+            InfoToolTip.SetToolTip(this.lbTessellate, "TODO");
             // 
             // lbSkinTint
             // 
@@ -1427,6 +1472,7 @@
             this.lbSkinTint.Size = new System.Drawing.Size(135, 13);
             this.lbSkinTint.TabIndex = 46;
             this.lbSkinTint.Text = "Skin Tint";
+            InfoToolTip.SetToolTip(this.lbSkinTint, "TODO");
             // 
             // lbFacegen
             // 
@@ -1438,6 +1484,7 @@
             this.lbFacegen.Size = new System.Drawing.Size(135, 13);
             this.lbFacegen.TabIndex = 45;
             this.lbFacegen.Text = "Facegen";
+            InfoToolTip.SetToolTip(this.lbFacegen, "TODO");
             // 
             // lbTree
             // 
@@ -1449,6 +1496,7 @@
             this.lbTree.Size = new System.Drawing.Size(135, 13);
             this.lbTree.TabIndex = 44;
             this.lbTree.Text = "Tree";
+            InfoToolTip.SetToolTip(this.lbTree, "TODO");
             // 
             // lbHairTintColor
             // 
@@ -1461,6 +1509,7 @@
             this.lbHairTintColor.Size = new System.Drawing.Size(135, 13);
             this.lbHairTintColor.TabIndex = 43;
             this.lbHairTintColor.Text = "Hair Tint Color";
+            InfoToolTip.SetToolTip(this.lbHairTintColor, "TODO");
             // 
             // lbHair
             // 
@@ -1472,6 +1521,7 @@
             this.lbHair.Size = new System.Drawing.Size(135, 13);
             this.lbHair.TabIndex = 42;
             this.lbHair.Text = "Hair";
+            InfoToolTip.SetToolTip(this.lbHair, "TODO");
             // 
             // lbEnvironmentMapEye
             // 
@@ -1483,6 +1533,7 @@
             this.lbEnvironmentMapEye.Size = new System.Drawing.Size(135, 13);
             this.lbEnvironmentMapEye.TabIndex = 41;
             this.lbEnvironmentMapEye.Text = "Environment Map Eye";
+            InfoToolTip.SetToolTip(this.lbEnvironmentMapEye, "TODO");
             // 
             // lbEnvironmentMapWindow
             // 
@@ -1494,6 +1545,7 @@
             this.lbEnvironmentMapWindow.Size = new System.Drawing.Size(135, 13);
             this.lbEnvironmentMapWindow.TabIndex = 40;
             this.lbEnvironmentMapWindow.Text = "Environment Map Window";
+            InfoToolTip.SetToolTip(this.lbEnvironmentMapWindow, "TODO");
             // 
             // lbGlowmap
             // 
@@ -1505,6 +1557,7 @@
             this.lbGlowmap.Size = new System.Drawing.Size(135, 13);
             this.lbGlowmap.TabIndex = 39;
             this.lbGlowmap.Text = "Glowmap";
+            InfoToolTip.SetToolTip(this.lbGlowmap, "TODO");
             // 
             // lbAssumeShadowmask
             // 
@@ -1516,6 +1569,7 @@
             this.lbAssumeShadowmask.Size = new System.Drawing.Size(135, 13);
             this.lbAssumeShadowmask.TabIndex = 38;
             this.lbAssumeShadowmask.Text = "Assume Shadowmask";
+            InfoToolTip.SetToolTip(this.lbAssumeShadowmask, "TODO");
             // 
             // lbDissolveFade
             // 
@@ -1527,6 +1581,7 @@
             this.lbDissolveFade.Size = new System.Drawing.Size(135, 13);
             this.lbDissolveFade.TabIndex = 37;
             this.lbDissolveFade.Text = "Dissolve Fade";
+            InfoToolTip.SetToolTip(this.lbDissolveFade, "TODO");
             // 
             // lbCastShadows
             // 
@@ -1538,6 +1593,7 @@
             this.lbCastShadows.Size = new System.Drawing.Size(135, 13);
             this.lbCastShadows.TabIndex = 36;
             this.lbCastShadows.Text = "Cast Shadows";
+            InfoToolTip.SetToolTip(this.lbCastShadows, "TODO");
             // 
             // lbHideSecret
             // 
@@ -1549,6 +1605,7 @@
             this.lbHideSecret.Size = new System.Drawing.Size(135, 13);
             this.lbHideSecret.TabIndex = 35;
             this.lbHideSecret.Text = "Hide Secret";
+            InfoToolTip.SetToolTip(this.lbHideSecret, "TODO");
             // 
             // lbReceiveShadows
             // 
@@ -1560,6 +1617,7 @@
             this.lbReceiveShadows.Size = new System.Drawing.Size(135, 13);
             this.lbReceiveShadows.TabIndex = 34;
             this.lbReceiveShadows.Text = "Receive Shadows";
+            InfoToolTip.SetToolTip(this.lbReceiveShadows, "TODO");
             // 
             // lbBackLighting
             // 
@@ -1571,6 +1629,7 @@
             this.lbBackLighting.Size = new System.Drawing.Size(135, 13);
             this.lbBackLighting.TabIndex = 33;
             this.lbBackLighting.Text = "Back Lighting";
+            InfoToolTip.SetToolTip(this.lbBackLighting, "TODO");
             // 
             // lbExternalEmittance
             // 
@@ -1582,6 +1641,7 @@
             this.lbExternalEmittance.Size = new System.Drawing.Size(135, 13);
             this.lbExternalEmittance.TabIndex = 32;
             this.lbExternalEmittance.Text = "External Emittance";
+            InfoToolTip.SetToolTip(this.lbExternalEmittance, "TODO");
             // 
             // lbModelSpaceNormals
             // 
@@ -1593,6 +1653,7 @@
             this.lbModelSpaceNormals.Size = new System.Drawing.Size(135, 13);
             this.lbModelSpaceNormals.TabIndex = 31;
             this.lbModelSpaceNormals.Text = "Model Space Normals";
+            InfoToolTip.SetToolTip(this.lbModelSpaceNormals, "TODO");
             // 
             // lbEmittanceMultiplier
             // 
@@ -1605,6 +1666,7 @@
             this.lbEmittanceMultiplier.Size = new System.Drawing.Size(135, 13);
             this.lbEmittanceMultiplier.TabIndex = 30;
             this.lbEmittanceMultiplier.Text = "Emittance Multiplier";
+            InfoToolTip.SetToolTip(this.lbEmittanceMultiplier, "TODO");
             // 
             // lbEmittanceColor
             // 
@@ -1617,6 +1679,7 @@
             this.lbEmittanceColor.Size = new System.Drawing.Size(135, 13);
             this.lbEmittanceColor.TabIndex = 29;
             this.lbEmittanceColor.Text = "Emittance Color";
+            InfoToolTip.SetToolTip(this.lbEmittanceColor, "TODO");
             // 
             // lbEmittanceEnabled
             // 
@@ -1628,6 +1691,7 @@
             this.lbEmittanceEnabled.Size = new System.Drawing.Size(135, 13);
             this.lbEmittanceEnabled.TabIndex = 28;
             this.lbEmittanceEnabled.Text = "Emittance Enabled";
+            InfoToolTip.SetToolTip(this.lbEmittanceEnabled, "TODO");
             // 
             // lbAnisoLighting
             // 
@@ -1639,6 +1703,7 @@
             this.lbAnisoLighting.Size = new System.Drawing.Size(135, 13);
             this.lbAnisoLighting.TabIndex = 27;
             this.lbAnisoLighting.Text = "Aniso Lighting";
+            InfoToolTip.SetToolTip(this.lbAnisoLighting, "TODO");
             // 
             // lbRootMaterialPath
             // 
@@ -1650,6 +1715,7 @@
             this.lbRootMaterialPath.Size = new System.Drawing.Size(135, 13);
             this.lbRootMaterialPath.TabIndex = 26;
             this.lbRootMaterialPath.Text = "Root Material Path";
+            InfoToolTip.SetToolTip(this.lbRootMaterialPath, "The File Path after <game>/Data/Materials/");
             // 
             // lbWetMetalness
             // 
@@ -1661,6 +1727,7 @@
             this.lbWetMetalness.Size = new System.Drawing.Size(135, 13);
             this.lbWetMetalness.TabIndex = 25;
             this.lbWetMetalness.Text = "Wet Metalness";
+            InfoToolTip.SetToolTip(this.lbWetMetalness, "TODO");
             // 
             // lbWetFresnelPower
             // 
@@ -1672,6 +1739,7 @@
             this.lbWetFresnelPower.Size = new System.Drawing.Size(135, 13);
             this.lbWetFresnelPower.TabIndex = 24;
             this.lbWetFresnelPower.Text = "Wet Fresnel Power";
+            InfoToolTip.SetToolTip(this.lbWetFresnelPower, "TODO");
             // 
             // lbWetEnvMapScale
             // 
@@ -1683,6 +1751,7 @@
             this.lbWetEnvMapScale.Size = new System.Drawing.Size(135, 13);
             this.lbWetEnvMapScale.TabIndex = 23;
             this.lbWetEnvMapScale.Text = "Wet Env Map Scale";
+            InfoToolTip.SetToolTip(this.lbWetEnvMapScale, "TODO");
             // 
             // lbWetSpecMinVar
             // 
@@ -1694,6 +1763,7 @@
             this.lbWetSpecMinVar.Size = new System.Drawing.Size(135, 13);
             this.lbWetSpecMinVar.TabIndex = 22;
             this.lbWetSpecMinVar.Text = "Wet Spec Min Var";
+            InfoToolTip.SetToolTip(this.lbWetSpecMinVar, "TODO");
             // 
             // lbWetSpecPowerScale
             // 
@@ -1705,6 +1775,7 @@
             this.lbWetSpecPowerScale.Size = new System.Drawing.Size(135, 13);
             this.lbWetSpecPowerScale.TabIndex = 21;
             this.lbWetSpecPowerScale.Text = "Wet Spec Power Scale";
+            InfoToolTip.SetToolTip(this.lbWetSpecPowerScale, "TODO");
             // 
             // lbWetSpecScale
             // 
@@ -1716,6 +1787,7 @@
             this.lbWetSpecScale.Size = new System.Drawing.Size(135, 13);
             this.lbWetSpecScale.TabIndex = 20;
             this.lbWetSpecScale.Text = "Wet Spec Scale";
+            InfoToolTip.SetToolTip(this.lbWetSpecScale, "TODO");
             // 
             // lbFresnelPower
             // 
@@ -1727,6 +1799,7 @@
             this.lbFresnelPower.Size = new System.Drawing.Size(135, 13);
             this.lbFresnelPower.TabIndex = 19;
             this.lbFresnelPower.Text = "Fresnel Power";
+            InfoToolTip.SetToolTip(this.lbFresnelPower, "TODO");
             // 
             // lbSmoothness
             // 
@@ -1738,6 +1811,7 @@
             this.lbSmoothness.Size = new System.Drawing.Size(135, 13);
             this.lbSmoothness.TabIndex = 18;
             this.lbSmoothness.Text = "Smoothness";
+            InfoToolTip.SetToolTip(this.lbSmoothness, "TODO");
             // 
             // lbSpecularMult
             // 
@@ -1750,6 +1824,7 @@
             this.lbSpecularMult.Size = new System.Drawing.Size(135, 13);
             this.lbSpecularMult.TabIndex = 17;
             this.lbSpecularMult.Text = "Specular Multiplier";
+            InfoToolTip.SetToolTip(this.lbSpecularMult, "TODO");
             // 
             // lbSpecularColor
             // 
@@ -1762,6 +1837,7 @@
             this.lbSpecularColor.Size = new System.Drawing.Size(135, 13);
             this.lbSpecularColor.TabIndex = 16;
             this.lbSpecularColor.Text = "Specular Color";
+            InfoToolTip.SetToolTip(this.lbSpecularColor, "TODO");
             // 
             // lbSpecularEnabled
             // 
@@ -1773,6 +1849,7 @@
             this.lbSpecularEnabled.Size = new System.Drawing.Size(135, 13);
             this.lbSpecularEnabled.TabIndex = 15;
             this.lbSpecularEnabled.Text = "Specular Enabled";
+            InfoToolTip.SetToolTip(this.lbSpecularEnabled, "TODO");
             // 
             // lbSubsurfaceLightingRolloff
             // 
@@ -1785,6 +1862,7 @@
             this.lbSubsurfaceLightingRolloff.Size = new System.Drawing.Size(135, 13);
             this.lbSubsurfaceLightingRolloff.TabIndex = 14;
             this.lbSubsurfaceLightingRolloff.Text = "Subsurface Lighting Rolloff";
+            InfoToolTip.SetToolTip(this.lbSubsurfaceLightingRolloff, "TODO");
             // 
             // lbSubsurfaceLighting
             // 
@@ -1796,6 +1874,7 @@
             this.lbSubsurfaceLighting.Size = new System.Drawing.Size(135, 13);
             this.lbSubsurfaceLighting.TabIndex = 13;
             this.lbSubsurfaceLighting.Text = "Subsurface Lighting";
+            InfoToolTip.SetToolTip(this.lbSubsurfaceLighting, "TODO");
             // 
             // lbBacklightPower
             // 
@@ -1807,6 +1886,7 @@
             this.lbBacklightPower.Size = new System.Drawing.Size(135, 13);
             this.lbBacklightPower.TabIndex = 12;
             this.lbBacklightPower.Text = "Backlight Power";
+            InfoToolTip.SetToolTip(this.lbBacklightPower, "TODO");
             // 
             // lbRimPower
             // 
@@ -1819,6 +1899,7 @@
             this.lbRimPower.Size = new System.Drawing.Size(135, 13);
             this.lbRimPower.TabIndex = 11;
             this.lbRimPower.Text = "Rim Power";
+            InfoToolTip.SetToolTip(this.lbRimPower, "TODO");
             // 
             // lbRimLighting
             // 
@@ -1830,6 +1911,7 @@
             this.lbRimLighting.Size = new System.Drawing.Size(135, 13);
             this.lbRimLighting.TabIndex = 10;
             this.lbRimLighting.Text = "Rim Lighting";
+            InfoToolTip.SetToolTip(this.lbRimLighting, "TODO");
             // 
             // lbEnableEditorAlphaRef
             // 
@@ -1841,6 +1923,7 @@
             this.lbEnableEditorAlphaRef.Size = new System.Drawing.Size(135, 13);
             this.lbEnableEditorAlphaRef.TabIndex = 9;
             this.lbEnableEditorAlphaRef.Text = "Enable Editor Alpha Ref";
+            InfoToolTip.SetToolTip(this.lbEnableEditorAlphaRef, "TODO");
             // 
             // lbDisplacementTexture
             // 
@@ -1852,6 +1935,7 @@
             this.lbDisplacementTexture.Size = new System.Drawing.Size(135, 13);
             this.lbDisplacementTexture.TabIndex = 8;
             this.lbDisplacementTexture.Text = "Displacement Texture";
+            InfoToolTip.SetToolTip(this.lbDisplacementTexture, "The File Path after <game>/Data/Textures/ - Usally ends with '_dp.dds'");
             // 
             // lbWrinklesTexture
             // 
@@ -1863,6 +1947,7 @@
             this.lbWrinklesTexture.Size = new System.Drawing.Size(135, 13);
             this.lbWrinklesTexture.TabIndex = 7;
             this.lbWrinklesTexture.Text = "Wrinkles Texture";
+            InfoToolTip.SetToolTip(this.lbWrinklesTexture, "The File Path after <game>/Data/Textures/ - Usally ends with '_w.dds'");
             // 
             // lbInnerLayerTexture
             // 
@@ -1874,6 +1959,7 @@
             this.lbInnerLayerTexture.Size = new System.Drawing.Size(135, 13);
             this.lbInnerLayerTexture.TabIndex = 6;
             this.lbInnerLayerTexture.Text = "Inner Layer Texture";
+            InfoToolTip.SetToolTip(this.lbInnerLayerTexture, "The File Path after <game>/Data/Textures/ - Usally ends with '_il.dds'");
             // 
             // lbGlowTexture
             // 
@@ -1885,6 +1971,7 @@
             this.lbGlowTexture.Size = new System.Drawing.Size(135, 13);
             this.lbGlowTexture.TabIndex = 5;
             this.lbGlowTexture.Text = "Glow Texture";
+            InfoToolTip.SetToolTip(this.lbGlowTexture, "The File Path after <game>/Data/Textures/ - Usally ends with '_g.dds'");
             // 
             // lbEnvironmentMapTexture
             // 
@@ -1896,6 +1983,7 @@
             this.lbEnvironmentMapTexture.Size = new System.Drawing.Size(135, 13);
             this.lbEnvironmentMapTexture.TabIndex = 4;
             this.lbEnvironmentMapTexture.Text = "Environment Map Texture";
+            InfoToolTip.SetToolTip(this.lbEnvironmentMapTexture, "The File Path after <game>/Data/Textures/ - Usally ends with '_env.dds'");
             // 
             // lbGreyscaleTexture
             // 
@@ -1907,6 +1995,7 @@
             this.lbGreyscaleTexture.Size = new System.Drawing.Size(135, 13);
             this.lbGreyscaleTexture.TabIndex = 3;
             this.lbGreyscaleTexture.Text = "Greyscale Texture";
+            InfoToolTip.SetToolTip(this.lbGreyscaleTexture, "The File Path after <game>/Data/Textures/ - Usally ends with '_gs.dds'");
             // 
             // lbSmoothSpecularTexture
             // 
@@ -1918,6 +2007,7 @@
             this.lbSmoothSpecularTexture.Size = new System.Drawing.Size(135, 13);
             this.lbSmoothSpecularTexture.TabIndex = 2;
             this.lbSmoothSpecularTexture.Text = "Smooth Specular Texture";
+            InfoToolTip.SetToolTip(this.lbSmoothSpecularTexture, "The File Path after <game>/Data/Textures/ - Usally ends with '_ss.dds'");
             // 
             // lbNormalTexture
             // 
@@ -1929,6 +2019,7 @@
             this.lbNormalTexture.Size = new System.Drawing.Size(135, 13);
             this.lbNormalTexture.TabIndex = 1;
             this.lbNormalTexture.Text = "Normal Texture";
+            InfoToolTip.SetToolTip(this.lbNormalTexture, "The File Path after <game>/Data/Textures/ - Usally ends with '_n.dds'");
             // 
             // lbDiffuseTexture
             // 
@@ -1940,6 +2031,7 @@
             this.lbDiffuseTexture.Size = new System.Drawing.Size(135, 13);
             this.lbDiffuseTexture.TabIndex = 0;
             this.lbDiffuseTexture.Text = "Diffuse Texture";
+            InfoToolTip.SetToolTip(this.lbDiffuseTexture, "The File Path after <game>/Data/Textures/ - Usally ends with '_d.dds'");
             // 
             // cbSkewSpecularAlpha
             // 
@@ -2890,6 +2982,7 @@
             this.lbSoftDepth.Size = new System.Drawing.Size(137, 13);
             this.lbSoftDepth.TabIndex = 19;
             this.lbSoftDepth.Text = "Soft Depth";
+            InfoToolTip.SetToolTip(this.lbSoftDepth, "TODO");
             // 
             // lbEnvmapMinLOD
             // 
@@ -2901,6 +2994,7 @@
             this.lbEnvmapMinLOD.Size = new System.Drawing.Size(137, 13);
             this.lbEnvmapMinLOD.TabIndex = 18;
             this.lbEnvmapMinLOD.Text = "Envmap Min LOD";
+            InfoToolTip.SetToolTip(this.lbEnvmapMinLOD, "TODO");
             // 
             // lbLightingInfluence
             // 
@@ -2912,6 +3006,7 @@
             this.lbLightingInfluence.Size = new System.Drawing.Size(137, 13);
             this.lbLightingInfluence.TabIndex = 17;
             this.lbLightingInfluence.Text = "Lighting Influence";
+            InfoToolTip.SetToolTip(this.lbLightingInfluence, "TODO");
             // 
             // lbFalloffStopOpacity
             // 
@@ -2924,6 +3019,7 @@
             this.lbFalloffStopOpacity.Size = new System.Drawing.Size(137, 13);
             this.lbFalloffStopOpacity.TabIndex = 16;
             this.lbFalloffStopOpacity.Text = "Falloff Stop Opacity";
+            InfoToolTip.SetToolTip(this.lbFalloffStopOpacity, "TODO");
             // 
             // lbFalloffStartOpacity
             // 
@@ -2936,6 +3032,7 @@
             this.lbFalloffStartOpacity.Size = new System.Drawing.Size(137, 13);
             this.lbFalloffStartOpacity.TabIndex = 15;
             this.lbFalloffStartOpacity.Text = "Falloff Start Opacity";
+            InfoToolTip.SetToolTip(this.lbFalloffStartOpacity, "TODO");
             // 
             // lbFalloffStopAngle
             // 
@@ -2948,6 +3045,7 @@
             this.lbFalloffStopAngle.Size = new System.Drawing.Size(137, 13);
             this.lbFalloffStopAngle.TabIndex = 14;
             this.lbFalloffStopAngle.Text = "Falloff Stop Angle";
+            InfoToolTip.SetToolTip(this.lbFalloffStopAngle, "TODO");
             // 
             // lbFalloffStartAngle
             // 
@@ -2960,6 +3058,7 @@
             this.lbFalloffStartAngle.Size = new System.Drawing.Size(137, 13);
             this.lbFalloffStartAngle.TabIndex = 13;
             this.lbFalloffStartAngle.Text = "Falloff Start Angle";
+            InfoToolTip.SetToolTip(this.lbFalloffStartAngle, "TODO");
             // 
             // lbBaseColorScale
             // 
@@ -2971,6 +3070,7 @@
             this.lbBaseColorScale.Size = new System.Drawing.Size(137, 13);
             this.lbBaseColorScale.TabIndex = 12;
             this.lbBaseColorScale.Text = "Base Color Scale";
+            InfoToolTip.SetToolTip(this.lbBaseColorScale, "TODO");
             // 
             // lbBaseColor
             // 
@@ -2982,6 +3082,7 @@
             this.lbBaseColor.Size = new System.Drawing.Size(137, 13);
             this.lbBaseColor.TabIndex = 11;
             this.lbBaseColor.Text = "Base Color";
+            InfoToolTip.SetToolTip(this.lbBaseColor, "TODO");
             // 
             // lbSoftEnabled
             // 
@@ -2993,6 +3094,7 @@
             this.lbSoftEnabled.Size = new System.Drawing.Size(137, 13);
             this.lbSoftEnabled.TabIndex = 10;
             this.lbSoftEnabled.Text = "Soft Enabled";
+            InfoToolTip.SetToolTip(this.lbSoftEnabled, "TODO");
             // 
             // lbGrayscaleToPaletteAlpha
             // 
@@ -3004,6 +3106,7 @@
             this.lbGrayscaleToPaletteAlpha.Size = new System.Drawing.Size(137, 13);
             this.lbGrayscaleToPaletteAlpha.TabIndex = 9;
             this.lbGrayscaleToPaletteAlpha.Text = "Grayscale To Palette Alpha";
+            InfoToolTip.SetToolTip(this.lbGrayscaleToPaletteAlpha, "TODO");
             // 
             // lbFalloffColorEnabled
             // 
@@ -3015,6 +3118,7 @@
             this.lbFalloffColorEnabled.Size = new System.Drawing.Size(137, 13);
             this.lbFalloffColorEnabled.TabIndex = 8;
             this.lbFalloffColorEnabled.Text = "Falloff Color Enabled";
+            InfoToolTip.SetToolTip(this.lbFalloffColorEnabled, "TODO");
             // 
             // lbFalloffEnabled
             // 
@@ -3026,6 +3130,7 @@
             this.lbFalloffEnabled.Size = new System.Drawing.Size(137, 13);
             this.lbFalloffEnabled.TabIndex = 7;
             this.lbFalloffEnabled.Text = "Falloff Enabled";
+            InfoToolTip.SetToolTip(this.lbFalloffEnabled, "TODO");
             // 
             // lbEffectLightingEnabled
             // 
@@ -3037,6 +3142,7 @@
             this.lbEffectLightingEnabled.Size = new System.Drawing.Size(137, 13);
             this.lbEffectLightingEnabled.TabIndex = 6;
             this.lbEffectLightingEnabled.Text = "Effect Lighting Enabled";
+            InfoToolTip.SetToolTip(this.lbEffectLightingEnabled, "TODO");
             // 
             // lbBloodEnabled
             // 
@@ -3048,6 +3154,7 @@
             this.lbBloodEnabled.Size = new System.Drawing.Size(137, 13);
             this.lbBloodEnabled.TabIndex = 5;
             this.lbBloodEnabled.Text = "Blood Enabled";
+            InfoToolTip.SetToolTip(this.lbBloodEnabled, "TODO");
             // 
             // lbEnvmapMaskTexture
             // 
@@ -3059,6 +3166,7 @@
             this.lbEnvmapMaskTexture.Size = new System.Drawing.Size(137, 13);
             this.lbEnvmapMaskTexture.TabIndex = 4;
             this.lbEnvmapMaskTexture.Text = "Envmap Mask Texture";
+            InfoToolTip.SetToolTip(this.lbEnvmapMaskTexture, "TODO");
             // 
             // lbNormalTexture_effect
             // 
@@ -3070,6 +3178,7 @@
             this.lbNormalTexture_effect.Size = new System.Drawing.Size(137, 13);
             this.lbNormalTexture_effect.TabIndex = 3;
             this.lbNormalTexture_effect.Text = "Normal Texture";
+            InfoToolTip.SetToolTip(this.lbNormalTexture_effect, "TODO");
             // 
             // lbEnvmapTexture
             // 
@@ -3081,6 +3190,7 @@
             this.lbEnvmapTexture.Size = new System.Drawing.Size(137, 13);
             this.lbEnvmapTexture.TabIndex = 2;
             this.lbEnvmapTexture.Text = "Envmap Texture";
+            InfoToolTip.SetToolTip(this.lbEnvmapTexture, "TODO");
             // 
             // lbGrayscaleTexture
             // 
@@ -3092,6 +3202,7 @@
             this.lbGrayscaleTexture.Size = new System.Drawing.Size(137, 13);
             this.lbGrayscaleTexture.TabIndex = 1;
             this.lbGrayscaleTexture.Text = "Grayscale Texture";
+            InfoToolTip.SetToolTip(this.lbGrayscaleTexture, "TODO");
             // 
             // lbBaseTexture
             // 
@@ -3103,6 +3214,7 @@
             this.lbBaseTexture.Size = new System.Drawing.Size(137, 13);
             this.lbBaseTexture.TabIndex = 0;
             this.lbBaseTexture.Text = "Base Texture";
+            InfoToolTip.SetToolTip(this.lbBaseTexture, "TODO");
             // 
             // numSoftDepth
             // 
